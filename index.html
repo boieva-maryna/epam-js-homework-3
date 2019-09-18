@@ -73,7 +73,7 @@
             else {
                 collection.forEach((elem)=>{
                     const product=document.createElement("article");
-                    const name=document.createElement("h2");
+                    const name=document.createElement("h3");
                     const old_price=document.createElement("p");
                     old_price.classList.add("old_price");
                     const new_price=document.createElement("p");
@@ -87,7 +87,7 @@
             }
         }
         function insertInfo(product,elem){
-            product.getElementsByTagName("h2")[0].innerHTML=elem.name;
+            product.getElementsByTagName("h3")[0].innerHTML=elem.name;
             product.getElementsByClassName("rating")[0].innerHTML=elem.ratingRevievs;
             if(elem.price.hasOwnProperty('newUan')){
                 product.getElementsByClassName("old_price")[0].innerHTML=elem.price.oldUan;
