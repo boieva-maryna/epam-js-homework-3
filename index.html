@@ -91,6 +91,7 @@
             product.getElementsByClassName("rating")[0].innerHTML=elem.ratingRevievs;
             if(elem.price.hasOwnProperty('newUan')){
                 product.getElementsByClassName("old_price")[0].innerHTML=elem.price.oldUan;
+                product.getElementsByClassName("old_price")[0].style.display="block";
                 product.getElementsByClassName("new_price")[0].innerHTML=elem.price.newUan;
             }else{
                 product.getElementsByClassName("old_price")[0].style.display="none";
